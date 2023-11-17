@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button size="small" [routerLink]="['/team']">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>CREER MON EQUIPE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="createTeam()" #eventForm="ngForm">
+    <ion-list>
+
+      <ion-item>
+        <ion-label position="floating">Nom de la nouvelle équipe : </ion-label>
+        <ion-input [(ngModel)]="teamName" name="eventName" type="text" required></ion-input>
+      </ion-item>      
+   
+
+      <ion-item>
+        <ion-label position="floating">Slogan : </ion-label>
+        <ion-input [(ngModel)]="sloganTeam" name="eventDescription" type="text" required></ion-input>
+      </ion-item>
+
+    </ion-list>
+    <ion-button expand="full" type="submit">CREER</ion-button>
+  </form>
+</ion-content>

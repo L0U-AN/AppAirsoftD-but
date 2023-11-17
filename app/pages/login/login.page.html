@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">Welcome Back</ion-title>
+    <p class="subTitle">Connecte-toi</p>
+  </div>
+  
+  <form>
+  
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input placeholder="Identifiant" class="input"></ion-input>
+        <ion-icon name="person"></ion-icon>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input placeholder="Mot de passe" class="input"></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+    </div>
+  
+    <div class="forgotPassword">
+      <a [routerLink]="['/reset-password']" style="color: #FFC33F">Mot de passe oublie ?</a>
+    </div>
+  
+    <div class="signupLink">
+      <p> Nouveau joueur ? <a [routerLink]="['/signup']" style="color: #FFC33F">Inscrit toi</a></p>
+    </div>
+  
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px;"> <!--Mettre le bouton en base de page-->
+      <ion-fab-button [routerLink]="['/home']"> <!--Cliquer pour acceder a la page login-->
+        <ion-icon name="arrow-forward-outline"></ion-icon>    </ion-fab-button>
+    </ion-fab>
+  
+  </form>
+  </ion-content>
+  

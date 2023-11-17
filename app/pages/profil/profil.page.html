@@ -1,0 +1,85 @@
+<ion-content>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-button size="small" [routerLink]="['/home']">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-button>
+      <ion-title>MON PROFIL</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <div class="header">
+      
+      <h2>Thomas</h2>
+
+      <div class="space-between">
+        <div class="followings">
+          <ion-badge color="primary" mode="ios">5</ion-badge>
+          <p>Equipes</p>
+        </div>
+
+        <div class="followings">
+          <ion-badge color="primary" mode="ios">20</ion-badge>
+          <p>Parties joué</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex">
+      <div class="border-blue">
+        <div class="border-white">
+          <div class="img-box">
+            <img src="https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/d/9/a/d9a1058910_50163142_elon-musk1.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full" [routerLink]="['/event-form']">
+        <ion-icon slot="start" name="calendar" class="icon"></ion-icon>
+        <ion-label class="text-button">Mes event</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full" [routerLink]="['/terrain-form']">
+        <ion-icon slot="start" name="location" class="icon"></ion-icon>
+        <ion-label class="text-button">Inscrire mon terrain</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full" [routerLink]="['/magasin-form']">
+        <ion-icon slot="start" name="storefront" class="icon"></ion-icon>
+        <ion-label class="text-button">Inscrire mon magasin</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full">
+        <ion-icon slot="start" name="lock-closed" class="icon"></ion-icon>
+        <ion-label class="text-button">Changer mot de passe</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full" [routerLink]="['/aide-form']">
+        <ion-icon slot="start" name="chatbox-ellipses" class="icon"></ion-icon>
+        <ion-label class="text-button">Aide & support</ion-label>
+      </ion-button>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-button class="full-width" shape="round" expand="full" [routerLink]="['/condition-utilisation']">
+        <ion-icon slot="start" name="information" class="icon"></ion-icon>
+        <ion-label class="text-button">Condition d'utilisation</ion-label>
+      </ion-button>
+    </ion-item>
+
+</ion-content>
+
+
+

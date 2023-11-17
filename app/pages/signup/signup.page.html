@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">Bienvenue </ion-title>
+    <p class="subTitle">Inscris-toi </p>
+  </div>
+  
+  <form (ngSubmit)="signUp()">
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input [(ngModel)]="username" placeholder="Identifiant" [ngModelOptions]="{standalone: true}" class="input" required></ion-input>
+        <ion-icon name="person"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <ion-input [(ngModel)]="email" type="email" placeholder="Email" [ngModelOptions]="{standalone: true}" class="input" required></ion-input>
+        <ion-icon name="mail-unread"></ion-icon>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input [(ngModel)]="password" type="password" placeholder="Mot de passe" [ngModelOptions]="{standalone: true}" class="input" required></ion-input>
+        <ion-icon name="lock-closed"></ion-icon>
+      </ion-item>
+    </div>
+  
+    <div class="signupLink">
+      <p> Tu es membre <a [routerLink]="['/login']" style="color: #FFC33F">Connecte-toi</a></p>
+    </div>
+  
+    
+      <ion-button type="submit" [routerLink]="['/home']">S'inscrire</ion-button>
+  </form>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+</ion-content>
